@@ -48,7 +48,7 @@ working directory; do not assume the command is installed on PATH.
 Before launching shell work, follow [the shell workflow](docs/shell-workflow.md):
 classify noninteractive work explicitly, capture logs with the managed runner,
 give the HUD a short purpose with `# codex-plus-task: TOPIC` after the mode line,
-and request a two-second foreground yield. Keep interactive and unclassified
+and use the initial yield for the selected mode. Keep interactive and unclassified
 commands visible. Use background display for long work that remains on the
 native-shell path, including independent AP sessions.
 
@@ -71,7 +71,7 @@ Before a native subagent waits for a shell result, read
 [worker shell waits](docs/shell-workflow.md#native-subagent-waits).
 
 For an independent read-only second opinion, the root session can use the
-[advisor](docs/advisor.md). Run `codex-plus advisor --help` for the built-in
+[advisor](docs/advisor.md). Run `./bin/codex-plus advisor --help` for the built-in
 workflow. Supply a self-contained brief; the main agent
 owns the decision after reviewing the advisor's findings. Consultations needed
 for the next decision stay foreground in one bounded local wait; read the advisor

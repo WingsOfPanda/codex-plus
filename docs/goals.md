@@ -1,7 +1,8 @@
 # Plus goals
 
-Available in `0.163.0-plus.0.3.2`, coordinator protocol 3. This document specifies
-the workflow; release qualification and fleet installation are separate checks.
+Introduced in `0.163.0-plus.0.3.2` with coordinator protocol 3. This document
+specifies the workflow; release qualification and fleet installation are
+separate checks.
 See [verification](verification.md) for checks actually run.
 
 ## Use a goal
@@ -166,8 +167,9 @@ Fleet-config owns the following rollout changes, on the separate rollout go:
 4. Extend the fleet wrapper's helper dispatch to include `goal`, install the new
    agent instructions only after the command exists, and check the native helper
    process roles as before.
-5. Require protocol 3 and a quiet transition from protocol 2. Future compatible
-   upgrades follow the existing higher-version cooperative transfer contract.
+5. The initial goal rollout requires protocol 3 and a quiet transition from
+   protocol 2. Later compatible upgrades follow the existing higher-version
+   cooperative transfer contract.
 
 Goal ownership introduces two callback marker states: `goal_owned` means jobs
 are still being observed, and `goal_settled` means those actual outcomes were

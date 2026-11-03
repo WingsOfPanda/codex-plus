@@ -227,9 +227,10 @@ allow maintenance without turning an unknown command outcome into success.
 The real TUI test names its thread to isolate display from upstream automatic
 title generation, reconnects during one execution and checks editable input,
 one completion wake and no display requests. Projection-only fixtures separately
-cover malformed/stale status and the three-row limit. Run existing park, goals,
-upgrade and terminal suites as regressions. Synthetic same-payload package
-switches test the mechanism, not arbitrary release compatibility or fleet pruning.
+cover malformed/stale status, mixed native/detached rows and editable input. Run
+existing park, goals, upgrade and terminal suites as regressions. Synthetic
+same-payload package switches test the mechanism, not arbitrary release
+compatibility or fleet pruning.
 Complete per-target archives and fleet rollout require their separate gates.
 
 ### Parallel MCP and web activity
@@ -306,8 +307,9 @@ partial shell and worker completion, missing/repeated progress, pause/edit/clear
 replaced goals, queue ambiguity, report-only renewal, controlled isolation,
 unloaded roots and actual TUI resume restarting observation. Check an independent
 park callback racing goal EOS before admitting the next goal turn. Healthy job
-waiting and display refresh must add no model requests. The right goal indicator
-must preserve editable input, narrow layouts and the three-row activity budget.
+waiting and display refresh must add no model requests. The goal indicator above
+the input must preserve editable input, narrow layouts and the current six-row
+activity budget.
 Run the existing park, upgrade, stock lifecycle, terminal, packaging and focused
 native goal/status/HUD/shell/transcript checks as regressions.
 

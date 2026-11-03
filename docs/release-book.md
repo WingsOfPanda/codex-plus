@@ -48,8 +48,7 @@ One command does not promise bug-free software or waive a failed acceptance chec
 
 ## Low-token execution
 
-Use the existing checked-in commands. This book change does not request a new
-release command, runner, or framework. The single-command endpoint above remains
+Use the existing checked-in commands. The single-command endpoint above remains
 a future implementation goal; do not claim it is available or build it as a side
 task during a release.
 
@@ -221,8 +220,9 @@ Select a path before scheduling work:
 | Test-only diagnosis | [Saved native results](verification.md#saved-native-results) can verify a correction on the exact unchanged harness; that diagnostic does not qualify a new native-runner plan |
 | New native runner | [Qualification status](release-protocol.md#qualification-status), then [local preparation](release-protocol.md#local-preparation); use only the operations its status permits |
 
-A prior release's green result is evidence, not a launch recipe. The current
-reference is [0.4.8 qualification](releases/0.163.0-plus.0.4.8/qualification.json).
+A prior release's green result is evidence, not a launch recipe. For the qualified
+0.163.0 recipes, the retained reference is
+[0.4.9 qualification](releases/0.163.0-plus.0.4.9/qualification.json).
 Check the actual checkout and entry points: a clean but old `main` is not the latest
 qualified release. Read the book and recipes from the selected tooling checkout.
 Its acceptance report does not supply a portable, qualified replacement controller.
