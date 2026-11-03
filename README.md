@@ -34,6 +34,15 @@ The development patch targets **Codex 0.165.0**, upstream commit
 See the [adaptation status](docs/upstream-0.165.0-assessment.md) before using the
 release workflow: the existing production recipes remain qualified for 0.163.0.
 
+## Development source and release status
+
+`main` contains development work; release qualification applies to the frozen
+product and tooling commits named by each release. For released behavior and
+artifact identities, use [GitHub Releases](https://github.com/WingsOfPanda/codex-plus/releases)
+and that tag's companion notes, qualification evidence and `handoff.json`.
+Fleet-config records installation and required session restarts separately;
+see [rollout verification](docs/release-book.md#6-close-rollout-and-measure).
+
 ## Run
 
 After building, launch a new session or resume an existing one:
