@@ -1,15 +1,17 @@
 # Reviewed long-job handoff
 
-Source implementation and private acceptance are recorded in
-[the evidence](evidence/detached-jobs.json). This is part of the combined
-`0.163.0-plus.0.4.0` candidate;
-complete release archives, publication and installation remain separate gates.
+Historical private acceptance for the protocol-4 detached-job candidate is
+recorded in [the evidence](evidence/detached-jobs.json). That candidate used the
+name `0.163.0-plus.0.4.0`; the [combined release](releases/0.163.0-plus.0.4.0.md#rollout)
+uses protocol 5. Complete release archives, publication and installation remain
+separate gates.
 
 ## Agent workflow
 
-These commands require the combined protocol-5 candidate. Until its quiet rollout,
-exercise the candidate only with a private `CODEX_HOME`; keep live protocol-3
-registrations on the installed helper. Building a binary is not a live migration.
+These commands require coordinator protocol 5. Exercise unqualified candidates
+only with a private `CODEX_HOME`. The initial protocol-3 to protocol-5 upgrade
+requires a qualified quiet cutover; keep live registrations on the installed
+helper until that cutover. Building a binary is not a live migration.
 
 1. Plan worker preparation and quick checks. Hand back expected runs over sixteen
    minutes and hardware/service operations before launch. If a permitted quick
